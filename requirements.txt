@@ -40,7 +40,6 @@ pyppeteer==0.2.2
 pyquery==1.4.1
 python-dateutil==2.8.1
 pytz==2020.1
-pywin32==227
 queuelib==1.5.0
 requests==2.24.0
 requests-html==0.10.0

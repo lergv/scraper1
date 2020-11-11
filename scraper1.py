@@ -1,7 +1,5 @@
 # import HTMLSession from requests_html
 from requests_html import HTMLSession
-import io
-
 import re
 
 
@@ -28,10 +26,10 @@ if __name__ == '__main__':
 ##		<span class="numero ng-binding">4&nbsp;811</span>&nbsp;nalezených
 ##	</p>
 
-    fname = "demofile2.html"
+##    fname = "demofile2.html"
     
-    with io.open(fname, "w", encoding="utf-8") as f:
-        f.write(resp.html.html)
+##    with io.open(fname, "w", encoding="utf-8") as f:
+##        f.write(resp.html.html)
 
     #title =  resp.html.find('.numero', first=True).text
     title =  resp.html.find('.numero')[1].text.strip()
